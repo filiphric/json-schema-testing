@@ -1,0 +1,24 @@
+{
+  "name": "json-schema-testing",
+  "version": "1.0.0",
+  "scripts": {
+    "cy:open": "./node_modules/.bin/cypress open",
+    "cy:run": "./node_modules/.bin/cypress run",
+    "postinstall": "git submodule update --init --recursive --remote && cd trelloapp && npm install -s",
+    "start": "cd trelloapp && npm start"
+  },
+  "keywords": [
+    "cypress"
+  ],
+  "author": "Filip Hric (https://filiphric.com/)",
+  "license": "ISC",
+  "dependencies": {
+    "@bahmutov/cy-api": "^2.1.3",
+    "@cypress/schema-tools": "^4.7.9",
+    "@types/node": "^18.0.3",
+    "chai-json-schema": "^1.5.1",
+    "cy-spok": "^1.5.2",
+    "cypress": "^10.3.0",
+    "typescript": "^4.7.4"
+  }
+}
